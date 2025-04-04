@@ -2,6 +2,7 @@
     --main-color: #596D48;
     --main-background: #f5f5dcd9;
     --box-border: pink;
+    --margin-text: 60px;
 }
 
 body {
@@ -63,6 +64,10 @@ body {
     width: 100%;
 }
 
+.disclaimer-text {
+    margin-left: var(--margin-text);
+}
+
 /* Middle part */
 .information-container {
     border: 5px solid var(--box-border);
@@ -79,6 +84,10 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.motivation-header {
+    margin-left: var(--margin-text);
 }
 
 .informations-buttons {
@@ -102,7 +111,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100px;
-    margin-left: 60px;
+    margin-left: var(--margin-text)
 }
 
 /* Bottom part */
@@ -116,5 +125,9 @@ body {
 
 .button-container, .log-in {
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: var(--margin-text)
+}
+
+.create-account-btn {
+    padding: 6px;
 }
